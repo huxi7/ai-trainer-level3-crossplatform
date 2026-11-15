@@ -6,7 +6,7 @@ Python + PySide6 Essentials + RapidOCR + ONNX Runtime + SQLite。
 日常运行不显示主窗口、菜单栏或托盘。
 
 <directory>
-tools/ - 采集与题库导出工具。
+tools/ - 采集、题库导出与运行包构建。
 question_bank/ - 本地采集资料，忽略 Git，完整数据发布到 Release。
 assistant/ - 共用匹配与界面，分平台截图和右键监听。
 models/ - 随包提供的轻量离线 OCR 模型。
