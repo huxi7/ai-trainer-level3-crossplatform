@@ -1,0 +1,40 @@
+{
+  "version": "0.3.1",
+  "shared_modules_verified": [
+    "layout",
+    "ocr",
+    "matching",
+    "bank",
+    "config",
+    "validation",
+    "main",
+    "ui"
+  ],
+  "Mac_frozen_and_Windows_source_equal": true,
+  "vision_backend": false,
+  "fixed_mac_requirement": "identifier \"net.local.trainerlevel3\"",
+  "answer_duration": {
+    "default": 2.5,
+    "min": 0.2,
+    "max": 5.0,
+    "auto_hide_and_persistence_verified": true
+  },
+  "windows_native_test": false,
+  "archives": [
+    {
+      "file": "三级助手-M系列Mac.zip",
+      "bytes": 111303572,
+      "sha256": "5e0552dd4c2648b38babed7c4c0b7be72b5c8c05631bf577e772094073fcaad9"
+    },
+    {
+      "file": "三级助手-Windows-x64.zip",
+      "bytes": 139544587,
+      "sha256": "e8322e684d673d6ae68617d5716c7e8ee47ea089e3819369a6a90a08d13bbb78"
+    },
+    {
+      "file": "人工智能训练师三级题库.zip",
+      "bytes": 2255377,
+      "sha256": "b0b334e0aa44ab239835d24ce6bc5274a89612718d7263b1defc9faa558da3ac"
+    }
+  ]
+}

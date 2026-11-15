@@ -1,0 +1,33 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+build/
+dist/
+.build-cache/
+
+# 运行包上传 GitHub Release，源码仓库不收构建产物。
+*.zip
+*.download
+*.tmp
+*.log
+*.log.*
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+
+# 本机配置、登录凭据与诊断截图不公开。
+.env
+.env.*
+!.env.example
+settings.json
+diagnostics/
+*.pem
+*.p12
+*.pfx
+
+# 编辑器和测试缓存。
+.idea/
+.vscode/
+.pytest_cache/
+.ruff_cache/

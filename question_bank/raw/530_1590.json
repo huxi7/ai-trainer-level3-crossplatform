@@ -1,0 +1,605 @@
+{
+  "result": "SUCCESS",
+  "data": {
+    "1590": {
+      "id": "53746",
+      "type": "1",
+      "title": "以下哪个选项不是调度日志管理的主要内容（ ）。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "A"
+      ],
+      "answer_type": "0",
+      "parsing": "调度日志管理的主要内容包括任务执行日志、调度过程日志、任务详细事件日志等运行记录。任务维护属于调度系统的功能管理范畴，不属于日志管理内容。",
+      "point": "1.00",
+      "option": {
+        "A": "任务维护",
+        "B": "任务执行日志",
+        "C": "调度过程日志",
+        "D": "任务详细事件日志"
+      },
+      "index": 1590
+    },
+    "1591": {
+      "id": "53747",
+      "type": "1",
+      "title": "交互设计中，通过（ ），我们就能利用反馈来改进设计。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "D"
+      ],
+      "answer_type": "0",
+      "parsing": "迭代设计是交互设计的核心方法，通过 \"设计 - 测试 - 反馈 - 改进\" 的循环迭代过程，不断利用用户反馈优化产品设计，逐步提升用户体验。",
+      "point": "1.00",
+      "option": {
+        "A": "回归",
+        "B": "冗余",
+        "C": "递归",
+        "D": "迭代"
+      },
+      "index": 1591
+    },
+    "1592": {
+      "id": "53748",
+      "type": "1",
+      "title": "在数据标注运行模式中，以下哪个选项是负责提出对接（ ）。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "D"
+      ],
+      "answer_type": "0",
+      "parsing": "在数据标注的运行模式中，需求端负责提出标注需求和对接要求，标注端负责执行具体标注工作，项目负责人负责整体协调管理。",
+      "point": "1.00",
+      "option": {
+        "A": "标注端",
+        "B": "项目负责人",
+        "C": "客户端",
+        "D": "需求端"
+      },
+      "index": 1592
+    },
+    "1593": {
+      "id": "53749",
+      "type": "1",
+      "title": "（ ）与音频标注相比，都需要通过人工识别转化成文本内容。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "A"
+      ],
+      "answer_type": "0",
+      "parsing": "视频标注中包含音频轨道内容，与音频标注类似，都需要人工将语音内容识别并转化为文本；文本标注本身已是文本，图像标注主要处理视觉内容，机器标注是自动化方式。",
+      "point": "1.00",
+      "option": {
+        "A": "视频标注",
+        "B": "文本标注",
+        "C": "机器标注",
+        "D": "图像标注"
+      },
+      "index": 1593
+    },
+    "1594": {
+      "id": "53750",
+      "type": "1",
+      "title": "业务分析阶段，如何确保推荐系统的合规性（ ）。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "C"
+      ],
+      "answer_type": "0",
+      "parsing": "推荐系统的合规性需要在业务分析阶段就纳入考量，通过遵守《个人信息保护法》《数据安全法》等相关法律法规和行业规范，从数据采集、使用到输出全流程确保合规，不能只依赖技术团队或事后补救。",
+      "point": "1.00",
+      "option": {
+        "A": "只关注用户隐私保护，其他合规性可以忽略",
+        "B": "无需特别关注，合规性可以在项目结束后再考虑",
+        "C": "通过遵守相关法律法规和行业规范",
+        "D": "合规性主要由技术团队负责，无需业务分析"
+      },
+      "index": 1594
+    },
+    "1595": {
+      "id": "53751",
+      "type": "1",
+      "title": "在智能家居系统的设计中，以下哪项不是常用的数据备份策略（ ）。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "D"
+      ],
+      "answer_type": "0",
+      "parsing": "常用的数据备份策略主要有三种：全量备份（完整备份所有数据）、增量备份（只备份上次备份后变化的数据）、差异备份（备份上次全量备份后变化的数据）。实时备份是一种备份时效描述，不属于标准的备份策略分类。",
+      "point": "1.00",
+      "option": {
+        "A": "差异备份",
+        "B": "增量备份",
+        "C": "全量备份",
+        "D": "实时备份"
+      },
+      "index": 1595
+    },
+    "1596": {
+      "id": "53752",
+      "type": "1",
+      "title": "以下深度学习框架中，（ ）是 ModelArts 深度支持的原生框架。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "A"
+      ],
+      "answer_type": "0",
+      "parsing": "<p>ModelArts 是华为云推出的 AI 开发平台，MindSpore 是华为自研的全场景深度学习框架，作为华为生态的核心组件，是 ModelArts 深度支持的原生框架；PyTorch、TensorFlow、MXNet 也支持但属于第三方框架。</p>",
+      "point": "1.00",
+      "option": {
+        "A": "Mindspore",
+        "B": "Pytorch",
+        "C": "Tensorflow",
+        "D": "MXNet"
+      },
+      "index": 1596
+    },
+    "1597": {
+      "id": "53804",
+      "type": "1",
+      "title": "深度学习框架 Mindspore 提供了对于数据集处理的子模块（），可支持加载处理各种通用数据集，以及各种数据集的增强功能。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "D"
+      ],
+      "answer_type": "0",
+      "parsing": "MindSpore 框架中数据集处理的核心子模块是 mindspore.dataset，负责数据加载、预处理、数据增强等完整的数据流水线功能。",
+      "point": "1.00",
+      "option": {
+        "A": "dataaugmentation",
+        "B": "dataprocess",
+        "C": "Datavision",
+        "D": "dataset"
+      },
+      "index": 1597
+    },
+    "1598": {
+      "id": "53805",
+      "type": "1",
+      "title": "在进行业务分析时，以下哪项不是识别关键业务指标（KPI）的步骤（）。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "A"
+      ],
+      "answer_type": "0",
+      "parsing": "KPI 识别需要遵循 SMART 原则，指标必须具体、可衡量、可实现、相关、有时限。设定不切实际的指标违背 KPI 设计原则，不是有效步骤。",
+      "point": "1.00",
+      "option": {
+        "A": "设定不切实际的指标",
+        "B": "确定可量化的目标",
+        "C": "与业务部门沟通",
+        "D": "分析历史数据"
+      },
+      "index": 1598
+    },
+    "1599": {
+      "id": "53806",
+      "type": "1",
+      "title": "在训练客服系统时，以下哪项不是常用的数据增强方法（）。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "A"
+      ],
+      "answer_type": "0",
+      "parsing": "客服系统以文本对话数据为主，常用数据增强方法包括同义词替换等数据变换、类别不平衡重采样、生成式数据合成等；数据裁剪主要用于图像领域，不是文本客服的常用增强手段。",
+      "point": "1.00",
+      "option": {
+        "A": "数据裁剪",
+        "B": "数据变换",
+        "C": "数据重采样",
+        "D": "数据合成"
+      },
+      "index": 1599
+    },
+    "1600": {
+      "id": "53807",
+      "type": "1",
+      "title": "职业道德形成的基础是（）。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "D"
+      ],
+      "answer_type": "0",
+      "parsing": "职业道德是在特定的职业实践活动中逐步形成的，源于职业分工和职业活动的实际需要，是社会道德在职业领域的具体体现，其形成基础是职业实践。",
+      "point": "1.00",
+      "option": {
+        "A": "一般的社会公德",
+        "B": "普遍的道德准则",
+        "C": "特定的阶级道德",
+        "D": "特定的职业实践"
+      },
+      "index": 1600
+    },
+    "1601": {
+      "id": "53808",
+      "type": "1",
+      "title": "在客服系统中，以下哪项不是常用的对话管理技术（）。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "A"
+      ],
+      "answer_type": "0",
+      "parsing": "对话管理系统需要依赖对话历史来理解上下文、维持多轮语义，因此对话历史忽略不是常用技术；主流技术包括对话状态追踪、策略选择、回复生成等。",
+      "point": "1.00",
+      "option": {
+        "A": "对话历史忽略",
+        "B": "对话生成",
+        "C": "对话状态追踪",
+        "D": "对话策略选择"
+      },
+      "index": 1601
+    },
+    "1602": {
+      "id": "53809",
+      "type": "1",
+      "title": "数据服务供应商为人工智能公司提供了大量带有标签的（）数据集，供计算机进行训练和学习，保证算法模型的有效性。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "A"
+      ],
+      "answer_type": "0",
+      "parsing": "有监督学习需要带有标签的标注数据集才能进行训练。数据标注是 AI 训练数据的核心生产环节，通过人工或半自动方式为数据打上类别、实体等标签。",
+      "point": "1.00",
+      "option": {
+        "A": "标注",
+        "B": "半结构化",
+        "C": "非结构化",
+        "D": "结构化"
+      },
+      "index": 1602
+    },
+    "1603": {
+      "id": "53810",
+      "type": "1",
+      "title": "（）是比较受业界欢迎、使用人数最多且应用较广泛的 ETL 数据整合工具。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "C"
+      ],
+      "answer_type": "0",
+      "parsing": "Kettle（Pentaho Data Integration）是开源、图形化的主流 ETL 工具，广泛用于数据抽取、转换和加载；Eclipse 是 IDE、Photoshop 是设计软件、Matlab 是数学计算工具。",
+      "point": "1.00",
+      "option": {
+        "A": "Eclipse",
+        "B": "Photoshop",
+        "C": "Kettle",
+        "D": "Matlab"
+      },
+      "index": 1603
+    },
+    "1604": {
+      "id": "53811",
+      "type": "1",
+      "title": "在评估客服系统时，以下哪项不是常用的用户行为数据？（）",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "B"
+      ],
+      "answer_type": "0",
+      "parsing": "用户行为数据是用户交互过程产生的动态记录（等待时长、点击、评分等）；用户年龄分布属于静态人口属性数据，不属于行为数据范畴。",
+      "point": "1.00",
+      "option": {
+        "A": "用户等待时间",
+        "B": "用户年龄分布",
+        "C": "用户点击次数",
+        "D": "用户满意度评分"
+      },
+      "index": 1604
+    },
+    "1605": {
+      "id": "53812",
+      "type": "1",
+      "title": "回归是指用一个（）以达到光滑数据。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "D"
+      ],
+      "answer_type": "0",
+      "parsing": "回归分析的核心是通过构造拟合函数（如线性回归、多项式回归等）来拟合数据点的分布趋势，从而实现数据光滑、预测等目的。",
+      "point": "1.00",
+      "option": {
+        "A": "对抗函数",
+        "B": "值函数",
+        "C": "似然函数",
+        "D": "拟合函数"
+      },
+      "index": 1605
+    },
+    "1606": {
+      "id": "53813",
+      "type": "1",
+      "title": "Informatica 支持复杂逻辑的（）和转化。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "B"
+      ],
+      "answer_type": "0",
+      "parsing": "Informatica 是主流 ETL 数据集成工具，核心能力是支持复杂逻辑的数据清洗（Cleaning）和数据转换（Transformation），是数据处理流水线的关键环节。",
+      "point": "1.00",
+      "option": {
+        "A": "触发器",
+        "B": "清洗",
+        "C": "格式",
+        "D": "日志"
+      },
+      "index": 1606
+    },
+    "1607": {
+      "id": "53814",
+      "type": "1",
+      "title": "网络上的 \"黑客\" 是指（）。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "A"
+      ],
+      "answer_type": "0",
+      "parsing": "黑客（Hacker）狭义上指利用技术手段未经授权非法侵入、访问他人计算机系统的人员，核心特征是系统入侵行为。",
+      "point": "1.00",
+      "option": {
+        "A": "在网上私闯他人计算机系统",
+        "B": "总在晚上上网",
+        "C": "匿名上网",
+        "D": "不花钱上网"
+      },
+      "index": 1607
+    },
+    "1608": {
+      "id": "53815",
+      "type": "1",
+      "title": "做好本职工作的基本条件是（）。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "A"
+      ],
+      "answer_type": "0",
+      "parsing": "做好本职工作的基础和前提是具备相应的专业知识与技能，这是完成工作任务的硬条件；职业道德、自我反思等属于素养层面的提升要求。",
+      "point": "1.00",
+      "option": {
+        "A": "努力学习现代科学文化知识和专业技能，提高文化素养",
+        "B": "提高精神境界，努力做到慎独",
+        "C": "经常进行自我反思，增强自律性",
+        "D": "学习职业道德规范，掌握职业道德知识"
+      },
+      "index": 1608
+    },
+    "1609": {
+      "id": "53816",
+      "type": "1",
+      "title": "（）是 ModelArts 而不是 MindSpore 核心特点。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "D"
+      ],
+      "answer_type": "0",
+      "parsing": "MindSpore 是深度学习框架，核心能力包括自动微分、自动并行、自动调优等框架级特性；ModelArts 是 AI 开发平台，自动部署（模型部署上线）是平台级服务能力，不属于框架本身的核心特点。",
+      "point": "1.00",
+      "option": {
+        "A": "自动并行",
+        "B": "自动微分",
+        "C": "自动调优",
+        "D": "自动部署"
+      },
+      "index": 1609
+    },
+    "1610": {
+      "id": "53817",
+      "type": "1",
+      "title": "一个字节最多可以编出（）个不同的码。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "C"
+      ],
+      "answer_type": "0",
+      "parsing": "<p>一个字节（Byte）由 8 位（bit）二进制数组成，每位有 0 和 1 两种状态，因此最多可表示 2^8= 256 个不同的编码值（0~255）。</p>",
+      "point": "1.00",
+      "option": {
+        "A": "16",
+        "B": "8",
+        "C": "256",
+        "D": "128"
+      },
+      "index": 1610
+    },
+    "1611": {
+      "id": "53818",
+      "type": "1",
+      "title": "训练有监督学习模型时，会把数据划分为（）、验证集和测试集。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "D"
+      ],
+      "answer_type": "0",
+      "parsing": "有监督学习的标准数据划分方式为：训练集（用于模型训练）、验证集（用于调参和模型选择）、测试集（用于最终评估），三者构成完整的数据集划分体系。",
+      "point": "1.00",
+      "option": {
+        "A": "语音集",
+        "B": "图片集",
+        "C": "视频集",
+        "D": "训练集"
+      },
+      "index": 1611
+    },
+    "1612": {
+      "id": "53819",
+      "type": "1",
+      "title": "企业应用基本都有数据源系统，数据源系统能够产生系统的日志文件数据，可用于对数据源系统发生的各项（）过程进行实时记录。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "B"
+      ],
+      "answer_type": "0",
+      "parsing": "系统日志（Log）的核心作用是实时记录系统运行过程中的各项操作事件、状态变更和异常信息，用于运维审计、问题排查和行为追溯。",
+      "point": "1.00",
+      "option": {
+        "A": "日志",
+        "B": "操作",
+        "C": "时间点",
+        "D": "数据"
+      },
+      "index": 1612
+    },
+    "1613": {
+      "id": "53820",
+      "type": "1",
+      "title": "在智能家居系统的设计中，以下哪项不是常用的数据存储方案？",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "D"
+      ],
+      "answer_type": "0",
+      "parsing": "智能家居常用存储方案包括本地存储（设备端）、云存储（云端）、分布式存储（多节点协同）。临时存储是数据的一种临时状态，不是独立的存储方案分类。",
+      "point": "1.00",
+      "option": {
+        "A": "本地存储",
+        "B": "分布式存储",
+        "C": "云存储",
+        "D": "临时存储"
+      },
+      "index": 1613
+    },
+    "1614": {
+      "id": "53821",
+      "type": "1",
+      "title": "机器标注算法对高层语义对象识别和（）效果不好。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "C"
+      ],
+      "answer_type": "0",
+      "parsing": "<p>高层语义对象识别 + <span style=\"font-style: normal; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-family: ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; line-height: 24px; flex: 0 1 auto; flex-direction: row; justify-content: normal; align-items: normal; padding: 0px; margin: 0px; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box;\">语义信息提取</span> 高度依赖上下文、场景常识；机器自动标注只能抓取浅层特征，很难精准完成高层次语义内容提取，因此判定这两项是机器标注的薄弱环节。因此这题选择C</p>",
+      "point": "1.00",
+      "option": {
+        "A": "清洗",
+        "B": "分类",
+        "C": "提取",
+        "D": "聚集"
+      },
+      "index": 1614
+    },
+    "1615": {
+      "id": "53822",
+      "type": "1",
+      "title": "数据提取的意义在于（）。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "B"
+      ],
+      "answer_type": "0",
+      "parsing": "数据提取（Data Extraction）的核心目的是从海量、多源数据中筛选并获取业务所需的目标数据，是数据处理流程的第一步。",
+      "point": "1.00",
+      "option": {
+        "A": "去除内容复杂的数据",
+        "B": "获得需要的目标数据",
+        "C": "提高数据的使用效率",
+        "D": "修改不符合要求的数据"
+      },
+      "index": 1615
+    },
+    "1616": {
+      "id": "53823",
+      "type": "1",
+      "title": "转换过程中进行的操作比较多，以下哪个选项是不正确的（）。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "A"
+      ],
+      "answer_type": "0",
+      "parsing": "ETL 中，转换（Transform）阶段负责数据结构修改、数据验证、数据清洗、格式转换等操作；移动数据属于加载（Load）阶段或传输环节，不属于转换操作。",
+      "point": "1.00",
+      "option": {
+        "A": "移动数据",
+        "B": "数据结构修改",
+        "C": "根据规则验证数据",
+        "D": "数据清洗"
+      },
+      "index": 1616
+    },
+    "1617": {
+      "id": "53824",
+      "type": "1",
+      "title": "以下哪个选项是数据采集系统设计的难点（）。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "C"
+      ],
+      "answer_type": "0",
+      "parsing": "数据采集系统需要 7×24 小时持续运行，面对多数据源、网络波动、格式变更等情况，采集处理流程的稳定性（高可用、容错、不丢数）是系统设计的核心难点。",
+      "point": "1.00",
+      "option": {
+        "A": "增量数据维护",
+        "B": "数据质量预估",
+        "C": "采集处理流程稳定性",
+        "D": "数据快照"
+      },
+      "index": 1617
+    },
+    "1618": {
+      "id": "55790",
+      "type": "1",
+      "title": "以下哪一项不是我们常用的 AI 引擎库。（ ）",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "C"
+      ],
+      "answer_type": "0",
+      "parsing": "A. MindSpore 是华为开源的深度学习框架，属于常用 AI 引擎库；B. Scikit-Learn 是 Python 常用机器学习库，属于 AI 引擎库；C. Linux 是操作系统，不是 AI 引擎库；D. TensorFlow 是 Google 开源的深度学习框架，属于常用 AI 引擎库。",
+      "point": "1.00",
+      "option": {
+        "A": "MindSpore",
+        "B": "Scikit-Learn",
+        "C": "Linux",
+        "D": "TensorFlow"
+      },
+      "index": 1618
+    },
+    "1619": {
+      "id": "55791",
+      "type": "1",
+      "title": "在训练推荐系统时，以下哪项不是处理过拟合问题的常用方法（ ）。",
+      "content": "",
+      "option_type": "0",
+      "correct_answer": [
+        "C"
+      ],
+      "answer_type": "0",
+      "parsing": "A. 增加训练数据多样性可提升模型泛化能力，是缓解过拟合的常用方法；B. 减少模型复杂度可降低过拟合风险；C. 增加训练轮次会使模型过度学习训练集细节，加剧过拟合，不是处理方法；D. 早停法在验证集性能下降时停止训练，是防止过拟合的常用技术。",
+      "point": "1.00",
+      "option": {
+        "A": "增加训练数据的多样性",
+        "B": "减少模型的复杂度",
+        "C": "增加模型的训练轮次",
+        "D": "使用早停法"
+      },
+      "index": 1619
+    }
+  }
+}

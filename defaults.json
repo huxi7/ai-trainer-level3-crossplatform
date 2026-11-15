@@ -1,0 +1,10 @@
+{
+  "font_size": 9,
+  "transparency": 85,
+  "capture_mode": "window",
+  "enabled": true,
+  "startup_notice": true,
+  "threshold_percent": 60,
+  "show_score": false,
+  "answer_duration": 2.5
+}

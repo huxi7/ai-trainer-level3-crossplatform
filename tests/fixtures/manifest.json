@@ -1,0 +1,37 @@
+[
+  {
+    "file": "single.png",
+    "name": "原站单选",
+    "expected": "C",
+    "source": "sample-screen.png",
+    "crop_bottom": 401
+  },
+  {
+    "file": "multiple.png",
+    "name": "原站多选",
+    "expected": "A、B、E",
+    "source": "thirdlevel-multiple.png",
+    "crop_bottom": 512
+  },
+  {
+    "file": "judge.png",
+    "name": "原站判断",
+    "expected": "错误",
+    "source": "thirdlevel-judge.png",
+    "crop_bottom": 290
+  },
+  {
+    "file": "shuffled.png",
+    "name": "选项位置交换",
+    "expected": "A",
+    "source": "single.png",
+    "derived": true
+  },
+  {
+    "file": "incomplete.png",
+    "name": "缺少选项",
+    "expected": "无",
+    "source": "single.png",
+    "derived": true
+  }
+]

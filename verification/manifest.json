@@ -1,0 +1,62 @@
+[
+  {
+    "file": "multiple-1.png",
+    "name": "Chrome真实多选第1题",
+    "expected": "A、B、E",
+    "source": "参考Mac项目/data/native-checks/multiple-1.png"
+  },
+  {
+    "file": "multiple-2.png",
+    "name": "Chrome真实多选第2题",
+    "expected": "A、C、E",
+    "source": "参考Mac项目/data/native-checks/multiple-2.png"
+  },
+  {
+    "file": "multiple-3.png",
+    "name": "Chrome真实多选第3题",
+    "expected": "A、B、C",
+    "source": "参考Mac项目/data/native-checks/multiple-3.png"
+  },
+  {
+    "file": "multiple-4.png",
+    "name": "Chrome真实多选第4题",
+    "expected": "A、C",
+    "source": "参考Mac项目/data/native-checks/multiple-4.png"
+  },
+  {
+    "file": "multiple-5.png",
+    "name": "Chrome真实多选第5题",
+    "expected": "B、C、D、E",
+    "source": "参考Mac项目/data/native-checks/multiple-5.png"
+  },
+  {
+    "file": "labels-reordered.png",
+    "name": "当前字母乱序",
+    "expected": "B、C、E",
+    "source": "参考Mac项目/data/native-checks/labels-reordered.png"
+  },
+  {
+    "file": "wrapped.png",
+    "name": "多行选项居中字母",
+    "expected": "A、B、C、D",
+    "source": "参考Mac项目/data/check-multiple-wrapped.png"
+  },
+  {
+    "file": "judge-wrapped.png",
+    "name": "六行判断题干",
+    "expected": "正确",
+    "source": "参考Mac项目/data/check-judge-wrapped.png"
+  },
+  {
+    "file": "single.png",
+    "name": "原站单选",
+    "expected": "C",
+    "source": "tests/fixtures/single.png"
+  },
+  {
+    "file": "incomplete.png",
+    "name": "缺失整项拒答",
+    "expected": "无",
+    "source": "tests/fixtures/incomplete.png"
+  }
+]
