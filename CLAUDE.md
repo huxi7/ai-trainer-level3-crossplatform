@@ -16,7 +16,7 @@ dist/ - 含运行环境的免安装交付包。
 </directory>
 
 <config>
-README.md - 交付状态与使用入口。
+README.md - 功能、下载、启动、设置与验证范围。
 人工智能训练师三级题库.zip - 首阶段题库与工具交付包。
 requirements.txt - 锁定跨平台 CPU 运行依赖。
 .gitignore - 排除构建缓存和生成文件。
