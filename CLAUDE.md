@@ -7,10 +7,10 @@ Python + PySide6 Essentials + RapidOCR + ONNX Runtime + SQLite。
 
 <directory>
 tools/ - 采集与题库导出工具。
-question_bank/ - 原始响应、去重题库与检查结果。
+question_bank/ - 本地采集资料，忽略 Git，完整数据发布到 Release。
 assistant/ - 共用匹配与界面，分平台截图和右键监听。
 models/ - 随包提供的轻量离线 OCR 模型。
-tests/ - 真实截图采样与轻量检查结果。
+tests/ - 本地历史检查与生成报告，忽略 Git。
 verification/ - 两平台随包提供的失败复现图与本机回归清单。
 dist/ - 含运行环境的免安装交付包。
 </directory>
@@ -20,11 +20,11 @@ README.md - 交付状态与使用入口。
 人工智能训练师三级题库.zip - 首阶段题库与工具交付包。
 requirements.txt - 锁定跨平台 CPU 运行依赖。
 .gitignore - 排除构建缓存和生成文件。
-.gitattributes - 保留题库换行，按二进制显示模型和 SQLite 差异。
+.gitattributes - 模型和 SQLite 按二进制记录。
 main.py - 脚本与运行包的共用启动入口。
 defaults.json - 随包提供的外观与截图范围预设。
 bank.sqlite3 - 仅含匹配字段的只读运行题库。
-验证报告.md - 实际检查结果与未验证的平台边界。
+验证报告.md - 本地检查记录，忽略 Git，存在时随运行包提供。
 THIRD_PARTY_NOTICES.txt - 随包依赖的版本与许可文本。
 macos_identity.json - 已授权产品的固定标识与指定签名要求。
 </config>

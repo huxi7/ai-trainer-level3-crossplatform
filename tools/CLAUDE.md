@@ -8,9 +8,18 @@
 成员清单
 collect_bank.mjs: Ego Lite 会话读题，按 30 题存档，校验 ID 并续采。
 build_bank.py: 标准库离线导出器。按内容去重，保留源文，禁用冲突与非唯一答案。
-prepare_runtime.py: 校验 mobile 模型摘要，生成仅含匹配字段的运行题库。
+prepare_runtime.py: 校验 mobile 模型；完整题库缺少时校验已有运行题库。
 build_mac.spec: ARM64 Mac 打包声明，收集共用 OCR 与离线资源，固定版本与应用标识。
 build_portable.py: 打包两平台同一识别代码，附答案时长说明，Mac 保持指定签名要求。
 launcher_windows.c: Win32 无终端启动器，提供主应用、设置和退出入口。
+
+构建入口
+使用 Python 3.10，安装 requirements.txt。
+构建依赖：PyInstaller 6.11.1、pip 24.3.1、ziglang 0.13.0。
+执行 python tools/build_portable.py mac 或 windows。
+执行 python main.py --self-check 检查共同图像回归。
+完整采集资料从 Release 的 question-bank.zip 取得。
+需要重建题库时，解压原始数据后执行 prepare_runtime.py。
+本地验证报告存在时随包提供，缺少时不阻塞构建。
 
 [PROTOCOL]: 变更时更新此头部，然后检查 CLAUDE.md

@@ -6,6 +6,11 @@ build/
 dist/
 .build-cache/
 
+# 完整采集资料和历史检查产物保留本地，题库包发布到 Release。
+/question_bank/
+/tests/
+/验证报告.md
+
 # 运行包上传 GitHub Release，源码仓库不收构建产物。
 *.zip
 *.download

@@ -1,4 +1,4 @@
-# [INPUT]: 依赖固定版本环境、官方 CPython Windows 运行库与平台轮子。
+# [INPUT]: 依赖固定版本环境、官方 CPython Windows 运行库与可选本地报告。
 # [OUTPUT]: 生成 Windows 免安装目录、M 系列 Mac 运行包及 ZIP。
 # [POS]: tools 的交付入口；打包全部依赖，不要求使用者安装 Python。
 # [PROTOCOL]: 变更时更新此头部，然后检查 CLAUDE.md
@@ -143,7 +143,8 @@ def windows():
     with (folder / '使用说明.txt').open('a', encoding='utf-8-sig') as instructions:
         instructions.write('0.3.1：设置内可调整答案显示时长，范围0.2–5.0秒，默认2.5秒。\n两平台使用同一 OCR 和匹配代码。双击“本机检查.exe”运行共同的10个图像回归。\n')
     shutil.copyfile(ROOT / 'THIRD_PARTY_NOTICES.txt', folder / 'THIRD_PARTY_NOTICES.txt')
-    shutil.copyfile(ROOT / '验证报告.md', folder / '验证报告.md')
+    if (ROOT / '验证报告.md').exists():
+        shutil.copyfile(ROOT / '验证报告.md', folder / '验证报告.md')
     archive(folder)
 
 
@@ -194,7 +195,8 @@ def mac():
         '双击“设置.app”调整外观、显示时长与截图范围；“退出.app”结束运行。\n'
         '运行包当前为本地签名。转发下载时，macOS 可能要求在隐私与安全性中允许打开。\n', encoding='utf-8')
     shutil.copyfile(ROOT / 'THIRD_PARTY_NOTICES.txt', folder / 'THIRD_PARTY_NOTICES.txt')
-    shutil.copyfile(ROOT / '验证报告.md', folder / '验证报告.md')
+    if (ROOT / '验证报告.md').exists():
+        shutil.copyfile(ROOT / '验证报告.md', folder / '验证报告.md')
     run(['codesign', '--verify', '--deep', '--strict', target])
     # ditto 保留 .app 符号链接与可执行权限。
     run(['/usr/bin/ditto', '-c', '-k', '--sequesterRsrc', '--keepParent', folder, DIST / (folder.name + '.zip')])

@@ -1,5 +1,5 @@
-# [INPUT]: 依赖已校验的 SQLite 题库、RapidOCR 模型清单与官方模型文件。
-# [OUTPUT]: 生成精简运行题库与离线模型，记录来源和 SHA-256。
+# [INPUT]: 依赖运行题库、可选完整 SQLite 题库和官方 RapidOCR 模型。
+# [OUTPUT]: 校验离线模型；有完整题库则重建运行题库，否则校验已有题库。
 # [POS]: tools 的资源准备入口；运行包不包含原始采集数据或默认大模型。
 # [PROTOCOL]: 变更时更新此头部，然后检查 CLAUDE.md
 import hashlib
@@ -32,7 +32,34 @@ def download(item):
     return {"file": name, "url": url, "sha256": expected, "bytes": target.stat().st_size}
 
 
+def prepare_bank():
+    destination = ROOT / "bank.sqlite3"
+    source_path = ROOT / "question_bank/questions.sqlite3"
+    if not source_path.is_file():
+        with sqlite3.connect(destination.as_uri() + "?mode=ro", uri=True) as database:
+            if database.execute("PRAGMA quick_check").fetchone()[0] != "ok":
+                raise ValueError("运行题库损坏，请重新下载 bank.sqlite3")
+            database.execute("SELECT id,type_base,stem_text,options_json,answer_keys_json,answer_contents_json,status FROM questions LIMIT 0")
+            count = database.execute("SELECT COUNT(*) FROM questions").fetchone()[0]
+            if not count:
+                raise ValueError("运行题库为空")
+        return count
+    temporary = ROOT / ".bank.sqlite3.tmp"
+    if temporary.exists():
+        temporary.unlink()
+    with sqlite3.connect(source_path.as_uri() + "?mode=ro", uri=True) as source, sqlite3.connect(str(temporary)) as target:
+        target.execute("CREATE TABLE questions(id INTEGER PRIMARY KEY,type_base TEXT,stem_text TEXT,options_json TEXT,answer_keys_json TEXT,answer_contents_json TEXT,status TEXT)")
+        source_rows = source.execute("SELECT id,type_base,stem_text,options_json,answer_keys_json,answer_contents_json,status FROM questions").fetchall()
+        target.executemany("INSERT INTO questions VALUES(?,?,?,?,?,?,?)", source_rows)
+        target.execute("PRAGMA user_version=1")
+        target.commit()
+        assert target.execute("PRAGMA quick_check").fetchone()[0] == "ok"
+    temporary.replace(destination)
+    return len(source_rows)
+
+
 def main():
+    count = prepare_bank()
     import rapidocr
     models_dir = Path(rapidocr.__file__).parent / "models"
     with ThreadPoolExecutor(max_workers=2) as pool:
@@ -43,19 +70,7 @@ def main():
         manifest.append({"file": target_name, "source": "rapidocr==3.4.2/" + source_name,
                          "sha256": hashlib.sha256(target.read_bytes()).hexdigest(), "bytes": target.stat().st_size})
     (ROOT / "models/manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    destination = ROOT / "bank.sqlite3"
-    temporary = ROOT / ".bank.sqlite3.tmp"
-    if temporary.exists():
-        temporary.unlink()
-    with sqlite3.connect(str(ROOT / "question_bank/questions.sqlite3")) as source, sqlite3.connect(str(temporary)) as target:
-        target.execute("CREATE TABLE questions(id INTEGER PRIMARY KEY,type_base TEXT,stem_text TEXT,options_json TEXT,answer_keys_json TEXT,answer_contents_json TEXT,status TEXT)")
-        source_rows = source.execute("SELECT id,type_base,stem_text,options_json,answer_keys_json,answer_contents_json,status FROM questions").fetchall()
-        target.executemany("INSERT INTO questions VALUES(?,?,?,?,?,?,?)", source_rows)
-        target.execute("PRAGMA user_version=1")
-        target.commit()
-        assert target.execute("PRAGMA quick_check").fetchone()[0] == "ok"
-    temporary.replace(destination)
-    print(json.dumps({"questions": len(source_rows), "database_bytes": destination.stat().st_size,
+    print(json.dumps({"questions": count, "database_bytes": (ROOT / "bank.sqlite3").stat().st_size,
                       "model_bytes": sum(item["bytes"] for item in manifest)}, ensure_ascii=False))
 
 
